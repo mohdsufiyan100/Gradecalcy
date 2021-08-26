@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student ERP</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="heading">
+            <h2>Grade Calculator</h2>
+        </div>
+        <div class="student_detail">
+            <div id="clgname">
+                <label for="clg">College Name:</label>
+                <input type="text" id="clg" placeholder="College Name" required="">
+            </div>
+            <div id="name">
+                <label for="studentname">Student Name:</label>
+                <input type="text" id="studentname" placeholder="Student Name" required="">
+            </div>
+            <div id="rollno">
+                <label for="studentrollno">Student Roll no:</label>
+                <input type="number" id="studentrollno" placeholder="Roll No." required="">
+            </div>
+        </div>
+        <div class="inputs">
+            <div class="maths">
+                <input type="text" id="sub1" value="Subject-1" required="">
+            </div>
+            <div class="science">
+                <input type="text" id="sub2" value="Subject-2" required="">
+            </div>
+            <div class="hindi">
+                <input type="text" id="sub3" value="Subject-3" required="">
+            </div>
+            <div class="english">
+                <input type="text" id="sub4" value="Subject-4" required="">
+            </div>
+            <div class="btn">
+                <button id="calcybtn" onclick="calcy()">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <div id="data_container">
+        <div class="student_detailform">
+            <div id="clgnameform">
+                <h1 id="cn"></h1>
+            </div>
+            <div id="nameform">
+                <h2 id="n"></h2>
+            </div>
+            <div id="rollnoform">
+                <h2 id="rn"></h2>
+            </div> 
+            <div id="rollnoform">
+                <h2 id="sc"></h2>
+            </div>
+            <div id="date">
+                <h2 id="d"></h2>
+            </div>
+        </div>
+        <div id="showdata">
+            <p id="sd"></p>
+        </div>
+    </div>
+
+</body>
+<script src="java.js"></script>
+
+</html>
